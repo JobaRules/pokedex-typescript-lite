@@ -1,0 +1,38 @@
+name: node-dev
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: node-dev:latest # nome da imagem personalizada
+    container_name: node-dev
+    working_dir: /home/node
+    volumes:
+      - node_temp:/home/temp   # cria e monta um volume interno em /home/temp
+      - ~/Documents/Dev/node:/home/node
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+volumes:
+  node_temp:   # define o volume nomeado
+
+# Para rodar o container, use:
+# docker compose up -d --build && docker compose logs -f?
+# docker compose down && docker compose up -d --build && docker compose logs -f
+# Para acessar o terminal do container lango execução, use:
+# docker exec -it node sh
+
+# Para rodar o container sem usar o docker-compose, use:
+# docker build -t node:slim-trixie .
+# REMOVER a build  anterior usando:
+# docker buildx history rm --all
+# LISTAR A builds usando:
+# docker buildx history ls
+
+#  docker run -it --rm \
+  # --name node \
+  # -v "$(pwd)":/home/node \
+  # -w /home/node \
+  # --entrypoint sh \
+  # node:slim-trixie
