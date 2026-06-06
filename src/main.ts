@@ -39,4 +39,5 @@ async function main(): Promise<void> {
   await controller.executar();
 }
 
+// A função "main" é chamada para iniciar a execução do aplicativo.
 main();

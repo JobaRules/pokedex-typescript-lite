@@ -6,6 +6,7 @@ import { readFile, writeFile } from "fs/promises";
 import { PokemonResumo } from "../models/pokemon.js";
 
 
+// A classe "BoxService" é exportada para que possa ser utilizada em outras partes do aplicativo, como no controlador do terminal para gerenciar o catálogo de pokémons.
 export class BoxService {
     //   Construtor que recebe o caminho do arquivo JSON onde os dados dos pokémons serão armazenados e lidos. 
     // O caminho é armazenado como uma propriedade privada da classe.
