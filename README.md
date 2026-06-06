@@ -466,10 +466,10 @@ npm run build
 
 # Executando com Docker
 
-## Build
+## Rodar contêiner
 
 ```bash
-docker build -t pokedex-typescript-lite .
+docker compose up -d --build && docker compose logs -f
 ```
 
 ## Executar

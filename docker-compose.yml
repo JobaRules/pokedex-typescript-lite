@@ -18,7 +18,8 @@ volumes:
   node_temp:   # define o volume nomeado
 
 # Para rodar o container, use:
-# docker compose up -d --build && docker compose logs -f?
+# docker compose up -d --build && docker compose logs -f
+# Para parar o container, use:
 # docker compose down && docker compose up -d --build && docker compose logs -f
 # Para acessar o terminal do container lango execução, use:
 # docker exec -it node sh
