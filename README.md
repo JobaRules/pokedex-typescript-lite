@@ -246,15 +246,14 @@ Conteúdo inicial:
 ## Branches
 
 ```text
-main
-develop
-
-feat/pokemon-model
-feat/pokeapi-service
-feat/box-service
-feat/controller
-
-docs/readme
+  main
+  evelop
+  docs/readme
+  feat/box-service
+  feat/controller
+  feat/pokeapi-service
+  feat/pokmon-model
+  feat/utils
 ```
 
 ---
