@@ -483,8 +483,6 @@ docker run --rm pokedex-typescript-lite
 
 Durante o desenvolvimento deste projeto foi utilizada a extensão GitHub Copilot Chat do Visual Studio Code como ferramenta de apoio para pesquisa, esclarecimento de dúvidas e revisão de código.
 
-Todo o código foi analisado, compreendido, adaptado e validado pelo autor do projeto para fins acadêmicos.
-
 ---
 
 # Autor
